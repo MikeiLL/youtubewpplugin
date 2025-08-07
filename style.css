@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: aliceblue;
+}
+
+
+a.ytsubscribebutton {
+  background-color: #ff0034;
+  color: white;
+  padding: 0.5em;
+  border-radius: 4px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a.ytsubscribebutton:hover {
+  background-color: #df002e;
+}
+
+a.ytsubscribebutton svg {
+  vertical-align: middle;
+}
