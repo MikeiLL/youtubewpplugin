@@ -1,5 +1,4 @@
 
-// https://www.googleapis.com/youtube/v3/playlists?id=PLeq_eMdgfBrO5KhjMoZDMauqGvFoheCCC&key=AIzaSyAzzbv7YNGv7kXAuIPXiqv-TsdioLeVuI0
 
 async function playlist() {
   let result = await fetch(`https://www.googleapis.com/youtube/v3/playlistItems?part=contentDetails,id&playlistId=PLeq_eMdgfBrO5KhjMoZDMauqGvFoheCCC&maxResults=50&key=YOURKEYHERE`);
