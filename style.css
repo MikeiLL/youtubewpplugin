@@ -6,6 +6,14 @@ body {
   background-color: aliceblue;
 }
 
+p.ytpdcta {
+  margin: auto;
+  font-size: 1.2em;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  margin: 1em;
+}
 
 a.ytsubscribebutton {
   background-color: #ff0034;
@@ -14,6 +22,7 @@ a.ytsubscribebutton {
   border-radius: 4px;
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
+  width: fit-content;
 }
 
 a.ytsubscribebutton:hover {
@@ -22,4 +31,11 @@ a.ytsubscribebutton:hover {
 
 a.ytsubscribebutton svg {
   vertical-align: middle;
+}
+
+.ytpldisplaywrapper {
+  border: 1px solid #b7b7b7;
+  border-radius: 5px;
+  margin: 1em;
+  padding: 0.5em;
 }

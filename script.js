@@ -1,7 +1,7 @@
 
 
 async function playlist() {
-  let result = await fetch(`https://www.googleapis.com/youtube/v3/playlistItems?part=contentDetails,id&playlistId=PLeq_eMdgfBrO5KhjMoZDMauqGvFoheCCC&maxResults=50&key=YOURKEYHERE`);
+  let result = await fetch(`https://www.googleapis.com/youtube/v3/playlistItems?part=contentDetails,id&playlistId=PLeq_eMdgfBrO5KhjMoZDMauqGvFoheCCC&maxResults=50&key=${ytpd_js_vars.YOUTUBE_API_KEY}`);
   let data = await result.json();
   data.items.forEach(video => {
     let videoId = video.contentDetails.videoId;
@@ -18,7 +18,6 @@ async function playlist() {
   });
 }
 playlist();
-
 
 
 /*
