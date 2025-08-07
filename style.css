@@ -2,10 +2,6 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: aliceblue;
-}
-
 p.ytpdcta {
   margin: auto;
   font-size: 1.2em;
@@ -13,20 +9,22 @@ p.ytpdcta {
   width: 100%;
   text-align: center;
   margin: 1em;
+  color: #353535;
 }
 
-a.ytsubscribebutton {
+a.ytsubscribebutton.ytsubscribebutton {
   background-color: #ff0034;
   color: white;
   padding: 0.5em;
   border-radius: 4px;
   text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
   width: fit-content;
 }
 
-a.ytsubscribebutton:hover {
+a.ytsubscribebutton.ytsubscribebutton:hover {
   background-color: #df002e;
+  text-decoration: none;
 }
 
 a.ytsubscribebutton svg {
