@@ -47,12 +47,12 @@ function display_videos() {
   </svg>
   Subscribe
 </a></p>";
-  return "<div class=ytpldisplaywrapper>$subbutton<div style='width: 100%;display: flex; flex-wrap: wrap; justify-content: space-evenly; gap:1em;' id='playlist'></div>$subbutton</div>
+  return "<div class=ytpldisplaywrapper>$subbutton<div style='width: 100%;display: flex; flex-wrap: wrap; justify-content: space-evenly; gap:1em;' id='mz-youtube-playlist-display-playlist'></div>$subbutton</div>
 ";
 }
 
-add_action('plugins_loaded', 'enqueue_styles');
-add_action('plugins_loaded', 'enqueue_scripts');
+add_action('plugins_loaded', 'YT_PLAYLIST_DISPLAY_enqueue_styles');
+add_action('plugins_loaded', 'YT_PLAYLIST_DISPLAY_enqueue_scripts');
 /**
  * Register and enqueue public-facing style sheet.
  *
@@ -60,7 +60,7 @@ add_action('plugins_loaded', 'enqueue_scripts');
  *
  * @return void
  */
-function enqueue_styles() {
+function YT_PLAYLIST_DISPLAY_enqueue_styles() {
   wp_enqueue_style( YTPD_TEXTDOMAIN . '-plugin-styles', plugins_url( 'style.css', YTPD_PLUGIN_ABSOLUTE ), array(), YTPD_VERSION );
 }
 
@@ -72,7 +72,7 @@ function enqueue_styles() {
  *
  * @return void
  */
-function enqueue_scripts() {
+function YT_PLAYLIST_DISPLAY_enqueue_scripts() {
   wp_register_script( YTPD_TEXTDOMAIN . '-plugin-script', plugins_url( 'script.js', YTPD_PLUGIN_ABSOLUTE ), array(), YTPD_VERSION );
   wp_localize_script(
     YTPD_TEXTDOMAIN . '-plugin-script',

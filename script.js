@@ -14,7 +14,7 @@ async function playlist() {
     mainVideo.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
     mainVideo.referrerpolicy = "strict-origin-when-cross-origin";
     mainVideo.allowfullscreen = "allowfullscreen";
-    document.getElementById("playlist").append(mainVideo);
+    document.getElementById("mz-youtube-playlist-display-playlist").append(mainVideo);
   });
 }
 playlist();
